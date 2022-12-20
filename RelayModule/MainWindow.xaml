@@ -1,0 +1,26 @@
+﻿<Window x:Class="RelayModule.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RelayModule"
+        mc:Ignorable="d"
+        Title="4 Channels Relay Module" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="RelaysComboBox" HorizontalAlignment="Left" Margin="134,28,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="-1" SelectionChanged="RelaysComboBox_SelectionChanged"/>
+        <Label Content="Select Relay" HorizontalAlignment="Left" Margin="44,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.267,-0.213"/>
+        <Label Content="Set State" HorizontalAlignment="Left" Margin="44,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.267,-0.213"/>
+        <Button x:Name="Write_btn" Content="Write" HorizontalAlignment="Left" Margin="270,73,0,0" VerticalAlignment="Top" Width="74" Click="Write_btn_Click"/>
+        <Label Content="Relay Status" HorizontalAlignment="Left" Margin="44,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.267,-0.213"/>
+        <Button x:Name="Read_btn" Content="Read" HorizontalAlignment="Left" Margin="270,119,0,0" VerticalAlignment="Top" Width="74" Click="Read_btn_Click"/>
+        <TextBox x:Name="Status_TxtBox" HorizontalAlignment="Left" Margin="134,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="LightGray" Width="120" IsEnabled="False"/>
+        <Label Content="Firmware" HorizontalAlignment="Left" Margin="44,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.267,-0.213"/>
+        <TextBox x:Name="Firmware_TxtBox" HorizontalAlignment="Left" Margin="134,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="LightGray" Width="120" IsEnabled="False"/>
+        <Label Content="ADC" HorizontalAlignment="Left" Margin="43,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="1.267,-0.213"/>
+        <TextBox x:Name="ADC_TxtBox" HorizontalAlignment="Left" Margin="134,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Background="LightGray" Width="120" IsEnabled="False"/>
+        <Button x:Name="Firmware_Btn" Content="Get Firmware" HorizontalAlignment="Left" Margin="270,163,0,0" VerticalAlignment="Top" Click="Firmware_Btn_Click"/>
+        <Button x:Name="ADC_btn" Content="Get ADC" HorizontalAlignment="Left" Margin="270,0,0,0" VerticalAlignment="Center" Width="74" Click="ADC_btn_Click"/>
+        <ComboBox x:Name="OnOff_ComboBox" HorizontalAlignment="Left" Margin="134,71,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="-1" SelectionChanged="RelaysComboBox_SelectionChanged"/>
+
+    </Grid>
+</Window>

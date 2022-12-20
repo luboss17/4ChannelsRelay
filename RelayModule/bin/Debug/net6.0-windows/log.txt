@@ -1,0 +1,1 @@
+Relay Read 0, stateRelay On 0Relay Read 0, stateRelay Read 1, stateRelay On 0Relay Read 0, stateRelay Off 0Relay Read 0, stateRelay Read 0, stateRelay On 1Relay Read 1, state
